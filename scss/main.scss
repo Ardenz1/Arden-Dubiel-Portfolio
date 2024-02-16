@@ -93,22 +93,27 @@ body {
       padding-bottom: 10px;
     }
   }
-  img{
-    display: block;
-    margin: auto;
-    width: 300px;
-   
-  }
-
-  h1,
+   h1,
 p {
   text-align: center;
 }
 }
 
+.mainMeImg{
+    display: block;
+    margin: auto;
+    width: 300px;
+       
+      
+}
+
 .mySkills{
     padding-top: 20px;
+    padding-bottom:15vh; 
     text-align: center;
+    h2{
+        padding-bottom:20px; 
+    }
     ul{
         columns: 2;
         column-gap: 20px; 
@@ -116,42 +121,43 @@ p {
         margin: 0 auto; 
         list-style-type: none;
     }
+    
 
 }
 
-
 footer {
-  font-size: 10px;
+  font-size: 1rem;
   background-color: white;
-  height: 10%;
+
 }
 
 /* Project Page */
 
 /* Contact Page */
 
-/* medium View */
-@media screen and (min-width: 35rem) {
-  hr {
-    display: block;
-    background-color: white;
-    border: 0px;
-    height: 4px;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .navUl {
-    font-size: 1rem;
-    :hover {
-      color: rgb(246, 155, 155);
-    }
-    :active {
-      color: rgb(151, 64, 64);
-    }
-  }
-}
-
 /* large View */
 @media screen and (min-width: 64rem) {
+
+    .homeWrapper{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    hr {
+        display: block;
+        background-color: white;
+        border: 0px;
+        height: 4px;
+        width: 80%;
+        margin: 0 auto;
+      }
+    
+      .navUl {
+        font-size: 1rem;
+        :hover {
+          color: rgb(246, 155, 155);
+        }
+        :active {
+          color: rgb(151, 64, 64);
+        }
+      }
 }

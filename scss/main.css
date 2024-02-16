@@ -89,19 +89,24 @@ body {
 .myIntro div h1 {
   padding-bottom: 10px;
 }
-.myIntro img {
-  display: block;
-  margin: auto;
-  width: 300px;
-}
 .myIntro h1,
 .myIntro p {
   text-align: center;
 }
 
+.mainMeImg {
+  display: block;
+  margin: auto;
+  width: 300px;
+}
+
 .mySkills {
   padding-top: 20px;
+  padding-bottom: 15vh;
   text-align: center;
+}
+.mySkills h2 {
+  padding-bottom: 20px;
 }
 .mySkills ul {
   -moz-columns: 2;
@@ -114,15 +119,18 @@ body {
 }
 
 footer {
-  font-size: 10px;
+  font-size: 1rem;
   background-color: white;
-  height: 10%;
 }
 
 /* Project Page */
 /* Contact Page */
-/* medium View */
-@media screen and (min-width: 35rem) {
+/* large View */
+@media screen and (min-width: 64rem) {
+  .homeWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   hr {
     display: block;
     background-color: white;
@@ -140,5 +148,4 @@ footer {
   .navUl :active {
     color: rgb(151, 64, 64);
   }
-}
-/* large View *//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
