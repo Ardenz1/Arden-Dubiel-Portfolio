@@ -1,0 +1,144 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  display: none;
+}
+
+.navUl {
+  font-size: 1.5rem;
+}
+.navUl li {
+  list-style-type: none;
+  display: none;
+}
+.navUl a {
+  display: block;
+}
+
+#menu {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: rgb(246, 155, 155);
+}
+#menu::before {
+  content: "≡";
+}
+
+#menu.show::before {
+  content: "☓";
+}
+
+.show {
+  display: block;
+}
+
+.show li {
+  display: flex;
+  padding-top: 10px;
+}
+.show li :hover {
+  color: rgb(246, 155, 155);
+  font-size: 2rem;
+  transition: font-size 1s ease;
+}
+.show li :active {
+  color: rgb(151, 64, 64);
+}
+
+@media only screen and (min-width: 40em) {
+  .navUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+  }
+  .navUl li {
+    display: block;
+  }
+  .navUl a {
+    text-align: center;
+  }
+  #menu {
+    display: none;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 229, 232);
+}
+
+.myIntro {
+  padding-top: 30px;
+}
+.myIntro div {
+  padding: 20px;
+}
+.myIntro div h1 {
+  padding-bottom: 10px;
+}
+.myIntro img {
+  display: block;
+  margin: auto;
+  width: 300px;
+}
+.myIntro h1,
+.myIntro p {
+  text-align: center;
+}
+
+.mySkills {
+  padding-top: 20px;
+  text-align: center;
+}
+.mySkills ul {
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+footer {
+  font-size: 10px;
+  background-color: white;
+  height: 10%;
+}
+
+/* Project Page */
+/* Contact Page */
+/* medium View */
+@media screen and (min-width: 35rem) {
+  hr {
+    display: block;
+    background-color: white;
+    border: 0px;
+    height: 4px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .navUl {
+    font-size: 1rem;
+  }
+  .navUl :hover {
+    color: rgb(246, 155, 155);
+  }
+  .navUl :active {
+    color: rgb(151, 64, 64);
+  }
+}
+/* large View *//*# sourceMappingURL=main.css.map */
