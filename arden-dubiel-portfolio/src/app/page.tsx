@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Image from "next/image"
+
 
 export default function Home() {
   return (
@@ -8,12 +9,14 @@ export default function Home() {
         <h3 className="text-lg pb-10">I'm a Web Designer and Developer</h3>
         <div className="flex flex-col items-center">
           <div className="h-80 w-72 overflow-hidden rounded-xl">
-            <img
-              src="../images/me.jpg"
+            <Image
+              src="/me.jpg"
+              width={280}
+            height={180}
               className="rounded-xl"
               style={{ marginTop: "-30px" }}
               alt="Your Description"
-            />
+            ></Image>
           </div>
         </div>
       </section>
