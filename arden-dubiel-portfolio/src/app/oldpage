@@ -1,0 +1,155 @@
+// "use client";
+// import { useState } from "react";
+// import Image from "next/image";
+// import CustomModal from "../components/CustomModal";
+
+// export default function Home() {
+//   const [modalIsOpen, setModalIsOpen] = useState(false);
+//   const [currentImage, setCurrentImage] = useState({ src: "", alt: "" });
+
+//   const openModal = (src: string, alt: string) => {
+//     setCurrentImage({ src, alt });
+//     setModalIsOpen(true);
+//   };
+
+//   const closeModal = () => {
+//     setModalIsOpen(false);
+//     setCurrentImage({ src: "", alt: "" });
+//   };
+
+//   return (
+//     <main className="flex flex-col items-center h-screen">
+//       <section className="mt-10">
+//         <h1 className="text-4xl">Hi, I&apos;m Arden</h1>
+//         <h3 className="text-lg pb-10">I&apos;m a Web Designer and Developer</h3>
+//         <div className="flex flex-col items-center">
+//           <div className="h-80 w-72 overflow-hidden rounded-xl">
+//             <Image
+//               src="/me.jpg"
+//               width={280}
+//               height={180}
+//               className="rounded-xl"
+//               style={{ marginTop: "-30px" }}
+//               alt="Your Description"
+//             />
+//           </div>
+//         </div>
+//       </section>
+//       <section className="w-62">
+//         <p className="mt-20 text-xl text-center">Quick Links</p>
+//         <div className="flex justify-around pb-10 pt-10 w-80">
+//           <button className="bg-myellow p-2 rounded-lg text-black">
+//             Graphic Design
+//           </button>
+//           <button className="bg-myellow p-2 rounded-lg text-black">
+//             Resume
+//           </button>
+//           <button className="bg-myellow p-2 rounded-lg text-black">
+//             Web Design
+//           </button>
+//         </div>
+//       </section>
+//       <h1 className="text-xl">Graphic Design</h1>
+//       <div className="bg-lightpurple pb-10 pt-20 w-full">
+//         <div
+//           className="cursor-pointer pl-10 pb-10"
+//           onClick={() =>
+//             openModal("/butterfly.png", "butterfly done in illustrator")
+//           }
+//         >
+//           <Image
+//             src="/butterfly.png"
+//             width={280}
+//             height={180}
+//             alt="butterfly done in illustrator"
+//           />
+//         </div>
+
+//         <div
+//           className="cursor-pointer pl-10 pb-10"
+//           onClick={() =>
+//             openModal(
+//               "/Gold_prson_poster.png",
+//               "Anxiety PSA poster done in illustrator, and Photoshop"
+//             )
+//           }
+//         >
+//           <Image
+//             src="/Gold_prson_poster.png"
+//             width={280}
+//             height={180}
+//             alt="Anxiety PSA poster done in illustrator, and Photoshop"
+//           />
+//         </div>
+
+//         <div
+//           className="cursor-pointer pl-10 pb-10"
+//           onClick={() =>
+//             openModal(
+//               "/Othello_Poster.png",
+//               "Othello Poster done in Illustrator"
+//             )
+//           }
+//         >
+//           <Image
+//             src="/Othello_Poster.png"
+//             width={280}
+//             height={180}
+//             alt="Othello Poster done in Illustrator"
+//           />
+//         </div>
+
+//         <p className="text-darkpurple text-lg px-10">
+//           To see more of my work check out my Behance
+//         </p>
+//         <p>
+//           <a 
+//             href="https://www.behance.net/ardendubiel"
+//             className="text-darkpurple text-xl px-10"
+//           >
+//             Behance Portfolio
+//           </a>
+//         </p>
+//       </div>
+//       <h1>Web Design</h1>
+//       <div className="bg-greenblue pb-10 pt-10 w-full">
+//       <iframe src="https://ardenz1.github.io/stylestage-sass/public/#main" title="Stylestage" className="w-full h-96"></iframe>
+
+//         <p className="text-darkpurple text-lg px-10">
+//           To see more of my work check out my GitHub  <a
+//             href="https://github.com/Ardenz1?tab=repositories"
+//             className="text-white"
+//           >
+//             Github Respositories
+//           </a>
+//         </p>
+        
+//       </div>
+//       <h1>Resume</h1>
+//       <div className="bg-myellow pb-10 pt-20 w-full">
+//         <embed
+//           src="/Arden-DubielResume2024.pdf"
+//           type="application/pdf"
+//           width={"100%"}
+//           height="450px"
+//           className="border border-gray-300"
+//         />
+//         <p><a href="https://www.linkedin.com/in/arden-dubiel/" className="text-xl">LinkedIn</a></p>
+//       </div>
+      
+//       <CustomModal
+//         isOpen={modalIsOpen}
+//         onRequestClose={closeModal}
+//         imageSrc={currentImage.src}
+//         altText={currentImage.alt}
+//       />
+//       <footer className="bg-greenblue w-full px-8 py-4"> 
+//         <ul>
+//           <li>Email: ardenzd3@gmail.com</li>
+//           <li>Phone: 123-123-123</li>
+//           </ul>
+      
+//       </footer>
+//     </main>
+//   );
+// }

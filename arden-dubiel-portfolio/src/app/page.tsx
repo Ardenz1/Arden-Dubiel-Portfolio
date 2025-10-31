@@ -1,47 +1,59 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
+import CustomModal from "../components/CustomModal";
 
 export default function Home() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState({ src: "", alt: "" });
+
+  const openModal = (src: string, alt: string) => {
+    setCurrentImage({ src, alt });
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setCurrentImage({ src: "", alt: "" });
+  };
+
   return (
-    <main className="flex flex-col items-center h-screen">
-      <section className="mt-10">
-        <h1 className="text-4xl">Hi, I&apos;m Arden</h1>
-        <h3 className="text-lg pb-10">I&apos;m a Web Designer and Developer</h3>
-        <div className="flex flex-col items-center">
-          <div className="h-80 w-72 overflow-hidden rounded-xl">
-            <Image
-              src="/me.jpg"
-              width={280}
-              height={180}
-              className="rounded-xl"
-              style={{ marginTop: "-30px" }}
-              alt="Your Description"
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-62">
-        <p className="mt-20 text-xl text-center">Quick Links</p>
-        <div className="flex justify-around pb-10 pt-10 w-80">
-          <button className="bg-myellow p-2 rounded-lg text-black">
-            Graphic Design
-          </button>
-          <button className="bg-myellow p-2 rounded-lg text-black">
-            Resume
-          </button>
-          <button className="bg-myellow p-2 rounded-lg text-black">
-            Web Design
-          </button>
-        </div>
-      </section>
-      <div className="bg-lightpurple pb-10 pt-20 w-full">
-        <h1>Graphic Design</h1>
+<main className="flex items-center justify-center">
+    {/* <p>dark mode/light mode button</p>
+    <p>links to socials as icons</p>
+    <p>doodles</p> */}
+
+  <section className="flex flex-col md:flex-row items-center justify-around w-full max-w-5xl px-6 md:px-10">
+    
+    {/* Text + buttons */}
+    <div className="order-1 md:order-none flex flex-col items-center lg:items-start text-center lg:text-left">
+      <div className="flex flex-col text-black">
+        <h1 className="text-8xl md:text-8xl pb-3">Hi, I&apos;m Arden</h1>
+        <h3 className="text-2xl">I&apos;m a Web, Graphic, and UI/UX Designer</h3>
       </div>
-      <div className="bg-greenblue pb-10 pt-20 w-full">
-        <h1>Web Design</h1>
+
+      <div className="flex gap-4 pt-10 pb-6 w-[300px] text-center">
+        <a className=" flex-1 px-4 py-2 bg-black border-4 border-transparent hover:bg-white transition hover:border-[#b77574] hover:border-4 hover:text-black text-white text-xl md:text-2xl rounded" href="/portfolio">Portfolio</a>
+        <a className="flex-1 px-4 py-2 bg-black border-4 border-transparent hover:bg-white transition hover:border-[#b77574] hover:border-4 hover:text-black text-white text-xl md:text-2xl rounded" href="/contact">Contact</a>
       </div>
-      <div className="bg-myellow pb-10 pt-20 w-full">
-        <h1>Resume</h1>
-      </div>
-    </main>
+    </div>
+
+    {/* Image */}
+  <div className="flex order-3">
+ <div className="relative inline-block">
+  <Image
+    src="/me22025.jpg"
+    width={400}
+    height={400}
+    alt="Your Description"
+    className="object-cover rounded-lg relative z-10"
+  />
+  <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-[#b77574] to-[#745252] translate-x-3 translate-y-3 z-0"></span>
+</div>
+  </div>  
+
+  </section>
+</main>
+
   );
 }
