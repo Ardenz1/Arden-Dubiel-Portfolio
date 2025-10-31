@@ -12,7 +12,7 @@ export default function Contact() {
     <div className="order-1 md:order-none flex flex-col items-center lg:items-start text-center lg:text-left">
       <div className="flex flex-col text-black">
         <h1 className="text-8xl md:text-8xl pb-3">Contact</h1>
-        <h3 className="text-2xl">Feel free to reach out, I'd love to connect</h3>
+        <h3 className="text-2xl">Feel free to reach out, I&apos;d love to connect</h3>
       </div>
 
       <div className="flex gap-4 pt-10 pb-6 w-[300px] text-center">
