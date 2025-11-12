@@ -18,7 +18,7 @@ export default function Home() {
   };
 
   return (
-<main className="flex items-center justify-center">
+<main className="flex items-center justify-center md:pb-[250px] lg:pb-[150px]">
     {/* <p>dark mode/light mode button</p>
     <p>links to socials as icons</p>
     <p>doodles</p> */}
@@ -26,9 +26,10 @@ export default function Home() {
   <section className="flex flex-col md:flex-row items-center justify-around w-full max-w-5xl px-6 md:px-10">
     
     {/* Text + buttons */}
-    <div className="order-1 md:order-none flex flex-col items-center lg:items-start text-center lg:text-left">
+    <div className="order-1 md:order-none flex flex-col items-center lg:items-start text-center lg:text-left mb-10">
       <div className="flex flex-col text-black">
-        <h1 className="text-8xl md:text-8xl pb-3">Hi, I&apos;m Arden</h1>
+        <h1 className="text-6xl md:text-8xl pb-3">Hi, I&apos;m Arden</h1>
+          <div className="h-1 w-20 bg-[#b77574] rounded-full mb-6 mx-auto  lg:mx-0"></div>
         <h3 className="text-2xl">I&apos;m a Web, Graphic, and UI/UX Designer</h3>
       </div>
 
