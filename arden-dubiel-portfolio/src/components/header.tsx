@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="shadow-md w-full relative">
       <div className="flex justify-between items-center px-6 py-4 mb-8">
-        <div className="text-5xl text-black hover:text-[#b77574]" style={{ fontFamily: "'Gabriela', sans-serif" }}><a href="/">A·D</a></div>
+        <div className="text-5xl text-black hover:text-[#b77574]"><a href="/">A·D</a></div>
         <div className="md:hidden">
           <button onClick={() => setOpen(!open)} className="flex flex-col justify-between w-6 h-6 relative">
             <span className={`block absolute h-0.5 w-6 bg-black transform transition duration-300 ease-in-out ${open ? "rotate-45 top-1/2 -translate-y-1/2" : "top-0"}`}></span>

@@ -48,6 +48,7 @@ export default function Home() {
     height={400}
     alt="Your Description"
     className="object-cover rounded-lg relative z-10"
+    priority 
   />
   <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-[#b77574] to-[#745252] translate-x-3 translate-y-3 z-0"></span>
 </div>
