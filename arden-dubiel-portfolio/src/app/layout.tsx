@@ -7,8 +7,8 @@ import Footer from "../components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Arden Dubiel Portfolio",
-  description: "My portfolio",
+  title: "Arden Dubiel",
+  description: "Portfolio of Arden Dubiel, including web design, UI/UX projects, and digital creative work.",
 };
 
 export default function RootLayout({
@@ -18,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       <body>
         <Header />
         {children}
