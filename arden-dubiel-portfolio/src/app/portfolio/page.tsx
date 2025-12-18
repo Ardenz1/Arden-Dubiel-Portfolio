@@ -165,7 +165,7 @@ const allSkills = [
         <div className="p-4 flex flex-col flex-1">
           <h3 className="text-xl text-black font-semibold mb-2">TNS Global</h3>
           <p className="text-gray-600 flex-1 mb-4">
-          Updated a WordPress site with Elementor, improving visual design, optimizing site design, improving functionality, and enhancing the user experience.          </p>
+          Another project I worked on while an Intern. I Updated a WordPress site with Elementor, improving visual design, optimizing site design, improving functionality, and enhancing the user experience.          </p>
           <a
             href="https://tnsglobalusa.com/"
             target="_blank"
