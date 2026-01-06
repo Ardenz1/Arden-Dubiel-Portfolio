@@ -17,7 +17,7 @@ const Footer = () => {
   </div>
 
   <p className="text-sm mt-4 md:mt-0 text-gray-400 text-center pb-4">
-    © 2025 Arden Dubiel. All rights reserved.
+    © 2026 Arden Dubiel. All rights reserved.
   </p>
 </section>
 
